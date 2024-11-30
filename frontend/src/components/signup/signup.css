@@ -1,0 +1,74 @@
+/* Full Page Centering */
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f7f4ed, #e8e3dc); /* Soft natural background */
+
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Column Height Adjustment */
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff; /* Neutral white for contrast */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  height: auto; /* Allow height to adjust dynamically */
+  padding: 2rem;
+  margin-left: 150px;
+}
+
+/* Input Field */
+.input-signup {
+  outline: none;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f9f9f9;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-signup:focus {
+  border-color: #a3c4bc; /* Subtle green focus */
+  box-shadow: 0 0 8px rgba(163, 196, 188, 0.4);
+}
+
+/* Heading */
+.sign-up-heading {
+  font-size: 60px; /* Reduced for better layout adjustment */
+  color: rgba(22, 2, 2, 0.87); /* Keep red tone */
+  opacity: 0.9;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Add slight depth */
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Signup Button */
+.btn-signup {
+  background-color: rgba(0, 0, 0, 0.87); /* Consistent red color */
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-signup:hover {
+  background-color: rgba(57, 55, 55, 0.87); /* Darker red on hover */
+  transform: translateY(-2px); /* Lift effect */
+}

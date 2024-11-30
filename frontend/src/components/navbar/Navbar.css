@@ -1,0 +1,95 @@
+/* Navbar Container */
+.navbar {
+  background-color: #b0b0b0; /* Elegant dark background */
+  padding: 1rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navbar-brand {
+  color: #000000; /* Vibrant yellow-gold */
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #000000; /* Slightly brighter yellow-gold on hover */
+}
+
+.nav-link {
+  color: #ffffff; /* Light text for links */
+  font-size: 16px;
+  margin: 0 10px;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #cfcfcf; /* Button-like hover background */
+  color: #1f2937; /* Dark text on hover */
+  border-radius: 4px;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffff; /* White for visibility */
+  width: 30px;
+  height: 3px;
+  display: block;
+  position: relative;
+}
+
+.navbar-toggler-icon::after,
+.navbar-toggler-icon::before {
+  content: '';
+  background-color: #ffffff;
+  width: 30px;
+  height: 3px;
+  display: block;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler-icon::after {
+  top: 8px;
+}
+
+/* Button Styles */
+.btn-nav {
+  background-color: transparent;
+  border: 2px solid #000000; /* Gold border */
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+.btn-nav:hover {
+  background-color:#df7a7a; /* Filled gold background */
+  color: #f4f4f4; /* Dark text */
+  border-color: #000000; /* Lighter gold border */
+  border-radius: 10%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 0;
+  }
+  .nav-link {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
